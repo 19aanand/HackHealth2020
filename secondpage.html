@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create an account</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <style type="text/css">
+  	#content{
+  		color: black;
+  		text-align: center;
+  		padding-top: 20%;
+  		text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+  	}
+  	body
+{
+	background: url(https://images.unsplash.com/photo-1502904550040-7534597429ae);
+  		background-size: cover;
+  		background-position: center;
+  		font-family: Lato;
+  	}
+  	div.font-size{
+	font-size: large
+}
+h1{
+	font-size: 4em;
+}
+  </style>
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class ="col-lg-6">
+			<div id="content">
+				<h1>Going the Distance</h1>
+				<hr>
+	<form>
+	<div class="font-size" class="form-group">
+    <label for="Email">Email address</label>
+    <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="email" required>
+  </div>
+  <div  class="font-size" class="form-group">
+    <label for="Password1">Password</label>
+    <input type="password" class="form-control" id="Password1" minlength="5" maxlength="10" placeholder="password" required>
+  </div>
+  <div class="font-size" class="form-row">
+    <div class="form-group col-md-4">
+      <label for="inputAge">Age</label>
+      <select class="form-control" id="inputAge">
+      <option selected>Choose...</option>
+        <option>10-14</option>
+        <option>15-19</option>
+        <option>20-24</option>
+        <option>25-29</option>
+        <option>30-34</option>
+        <option>35-39</option>
+        <option>40-44</option>
+        <option>45-49</option>
+        <option>50-54</option>
+        <option>55-60</option>
+    </select>
+    </div>
+    <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="inputHt">Height</label>
+      <select class="form-control" id="inputHt">
+      <option selected>Choose...</option>
+        <option>4.8</option>
+        <option>5.0</option>
+        <option>5.2</option>
+        <option>5.4</option>
+        <option>5.6</option>
+        <option>5.8</option>
+        <option>6.0</option>
+    </select>
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputWt">Weight</label>
+      <input type = "number" min="15" max="400" id="inputWt" class="form-control" placeholder="Pounds">
+    </div>
+  </div>
+  <button class="btn btn-primary btn-lg">Create an account</button>
+</div>
+</div>
+</form>
+</body>
+</html>
