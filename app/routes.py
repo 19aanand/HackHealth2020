@@ -7,8 +7,8 @@ from flask import render_template
 
 @app.route('/')
 @app.route('/')
-def index():
-  return render_template('Homepage.html')
+def index(script):
+  return render_template(script[1] + script[2])
   
   
 def Replace(str1): 
