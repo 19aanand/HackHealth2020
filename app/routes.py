@@ -5,10 +5,10 @@ from bokeh.embed import components
 from app import app
 from flask import render_template
 
-@app.route('/')
-@app.route('/')
-def index(script):
-  return render_template(script[1] + script[2])
+#@app.route('/')
+#@app.route('/')
+#def index(script):
+ # return render_template(script[1] + script[2])
   
   
 def Replace(str1): 
@@ -48,4 +48,9 @@ plot.yaxis.axis_label = "Total Steps"
 
 script = components(plot)
 
-index(script)
+
+@app.route('/')
+@app.route('/index')
+def index():
+  user = {'username':'Cole'}
+  return render_template('Homepage.html', user = 'user')
