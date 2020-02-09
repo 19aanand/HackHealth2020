@@ -45,6 +45,6 @@ def returnCode():
     plot.xaxis.axis_label = "Day"
     plot.yaxis.axis_label = "Total Steps"
 
-    script = components(plot)
+    script1 = components(plot)
 
-    return script[1] + script[0]
+    return script1[1] + script1[0]
